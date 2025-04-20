@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -52,6 +53,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
+  margin-top: 0;
 }
 
 .about h2 {
@@ -75,13 +77,24 @@ body {
   background-color: #ffffffc2;
 }
 
+span {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid #4F3B31;
+  padding: 5px 10px;
+  margin: 4px;
+  border-radius: 10px;
+  line-height: 1.3;
+  vertical-align: middle;
+}
+
 .box {
   border: 2px solid #3E2723;
   background-color: #fff;
   border-radius: 15px;
-  
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
 }
 
 .box h3 {
@@ -93,48 +106,15 @@ body {
   text-align: justify;
   font-size: 18px;
 }
-/* Ensure a smooth transition */
- img {
-  transition: transform 0.3s ease;
-}
 
-/* On hover, scale up */
- a:hover img {
-  transform: scale(1.2);
-}
-.hero,
-.about {
-  margin: 0; /* Remove margins */
-  padding: 0; /* Optional: If there’s still extra padding you want to remove */
-}
-
-.about {
-  /* Remove or adjust margin-top if necessary */
-  margin-top: 0;
-  padding-top: 0; /* Make sure there's no extra padding */
-}
-.s1{
-  background-color: #628b35;
-  color: #E2DBD0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-}
-span {
-  display: inline-block;     /* ← key addition */
-  background-color: white;
-  border: 2px solid #4F3B31;
-  padding: 5px 10px;
-  margin: 4px;
-  border-radius: 10px;
-  line-height: 1.3;          /* ensures enough line‑height */
-  vertical-align: middle;    /* keeps them aligned nicely */
-}
+/* Form Section */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   max-width: 500px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 input, textarea {
@@ -161,3 +141,72 @@ button:hover {
   background-color: #365b1a;
 }
 
+/* Transitions */
+img {
+  transition: transform 0.3s ease;
+}
+
+a:hover img {
+  transform: scale(1.2);
+}
+
+/* Optional Styling Class */
+.s1 {
+  background-color: #628b35;
+  color: #E2DBD0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero .tagline {
+    font-size: 20px;
+  }
+
+  .socials img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+
+  .about {
+    padding: 30px 10px;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  .box p {
+    font-size: 16px;
+  }
+
+  .tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  span {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
