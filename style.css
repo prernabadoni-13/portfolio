@@ -14,21 +14,17 @@ body {
 
 /* Hero Section */
 #hero {
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  height: 300px; 
-  display: flex; 
-  flex-direction: column;
-   align-items: center; 
-   justify-content: center; 
-   text-align: center;
-   margin-bottom: 500px;
-   margin-top: 300px;
+ 
+    min-height: 100vh; /* Fill entire screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* remove unnecessary margin pushing it down */
+  
+  
 }
 
 #hero h1 {
@@ -250,13 +246,12 @@ a:hover img {
 .nav
 {
   text-decoration: none; 
-  padding: 8px 16px; 
-  background-color: #f2afbc; 
-  color: black; 
+  padding: 8px 16px;  
+  color: #f2afbc; 
   border-radius: 50px;
 }
 .nav:hover{
-  background-color: white; 
+  
   color:#fe6e7e;
 }
 #edu {
