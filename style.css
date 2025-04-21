@@ -8,8 +8,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #E2DBD0; /* soft coffee background */
-  color: #628b35; /* dark coffee text */
+  background-color: black; /* soft coffee background */
+  color: #e86975; /* dark coffee text */
 }
 
 /* Hero Section */
@@ -21,6 +21,14 @@ body {
   justify-content: center;
   text-align: center;
   padding: 20px;
+  height: 300px; 
+  display: flex; 
+  flex-direction: column;
+   align-items: center; 
+   justify-content: center; 
+   text-align: center;
+   margin-bottom: 500px;
+   margin-top: 300px;
 }
 
 #hero h1 {
@@ -40,6 +48,7 @@ body {
   border-radius: 50%;
   margin: 0 10px;
   transition: transform 0.3s;
+  border: solid rgb(244, 102, 102) 2px;
 }
 
 .socials img:hover {
@@ -54,20 +63,15 @@ body {
   justify-content: center;
   padding: 60px 20px;
   margin-top: 0;
+
 }
 
 .about h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom:20px;
 }
 
-.tags {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 
 .tags span {
   border: 2px solid #3E2723;
@@ -89,12 +93,15 @@ span {
 }
 
 .box {
-  border: 2px solid #3E2723;
+  border: 2px solid #e77291;
   background-color: #fff;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+ 
   max-width: 800px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 0px #e77291;
+  
 }
 
 .box h3 {
@@ -127,7 +134,7 @@ input, textarea {
 
 button {
   padding: 10px 20px;
-  background-color: #477023;
+  background-color: #fe6e7e;
   color: white;
   border: none;
   border-radius: 5px;
@@ -138,7 +145,8 @@ button {
 }
 
 button:hover {
-  background-color: #365b1a;
+  background-color: white;
+  color:#fe6e7e;
 }
 
 /* Transitions */
@@ -152,7 +160,7 @@ a:hover img {
 
 /* Optional Styling Class */
 .s1 {
-  background-color: #628b35;
+  background-color: #d95f76;
   color: #E2DBD0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
@@ -210,3 +218,187 @@ a:hover img {
     font-size: 0.9rem;
   }
 }
+#lc
+{
+  border: solid #a2445a 2px;
+  border-radius: 50%;
+}
+#github
+{
+  border:  solid #a2445a 2px;
+  border-radius:50%;
+}
+#linkedin
+{
+  border: solid #a2445a 2px;
+  border-radius: 50%;
+
+}
+#contacts
+{
+  background-color: black;
+  text-align: center;
+  margin-bottom: 3%;
+ 
+}
+#contact_me
+{
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 0%;
+}
+.nav
+{
+  text-decoration: none; 
+  padding: 8px 16px; 
+  background-color: #f2afbc; 
+  color: black; 
+  border-radius: 50px;
+}
+.nav:hover{
+  background-color: white; 
+  color:#fe6e7e;
+}
+#edu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#edu h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.edu-container {
+  display: flex;
+  gap: 20px;                   /* space between columns */
+  justify-content: center;
+  flex-wrap: wrap;             /* stack on mobile if needed */
+}
+
+.edu-box {
+  flex: 1 1 250px;             /* grow/shrink, base width 250px */
+  max-width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* box‑shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.edu-box img {
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.edu-box p {
+  margin: 4px 0;
+  color: #000;
+}
+
+.edu-box p.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.edu-box p.sub {
+  font-size: 18px;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#projects h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  gap: 20px;               /* space between boxes */
+  justify-content: center;
+  flex-wrap: wrap;         /* wraps on narrow screens */
+}
+
+.project-box {
+  flex: 1 1 280px;         /* grow/shrink, base width 280px */
+  max-width: 500px;
+  height: 550px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.project-box .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.project-box .desc {
+  font-size: 18px;
+  color: #000;
+  margin: 10px 0;
+}
+
+.project-box .tech {
+  font-size: 16px;
+  color: #555;
+}
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #24292e;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-bottom:2px;
+  margin-top: 10px;
+}
+#waf
+{
+  margin-top: 55px;
+}
+#movie
+{
+  margin-top: 30px;
+}
+
+
+
+.github-link:hover {
+  background-color: #f2afbc;
+  color: black; /* Optional hover effect */
+}
+.project-box img {
+  width: 200px;
+  height: 210px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
