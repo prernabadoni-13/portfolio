@@ -33,7 +33,7 @@ html {
 section {
   position: relative;
   z-index: 1; /* navbar has z-index: 1000, so this is behind it */
-  padding-top: 50px; /* adjust according to navbar height */
+  padding-top: 20px; /* adjust according to navbar height */
 }
 
 
