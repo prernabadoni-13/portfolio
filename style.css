@@ -10,6 +10,10 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: black; /* soft coffee background */
   color: #e86975; /* dark coffee text */
+  padding-top: 80px;
+}
+html {
+  scroll-padding-top: 80px; /* or whatever your navbar height is */
 }
 
 /* Hero Section */
@@ -26,6 +30,12 @@ body {
   
   
 }
+section {
+  position: relative;
+  z-index: 1; /* navbar has z-index: 1000, so this is behind it */
+  padding-top: 100px; /* adjust according to navbar height */
+}
+
 
 #hero h1 {
   font-size: 60px;
@@ -230,6 +240,7 @@ a:hover img {
   border-radius: 50%;
 
 }
+
 #contacts
 {
   background-color: black;
@@ -243,17 +254,28 @@ a:hover img {
   font-size: 30px;
   padding-bottom: 0%;
 }
-.nav
+.link
 {
   text-decoration: none; 
   padding: 8px 16px;  
   color: #f2afbc; 
   border-radius: 50px;
+  
 }
-.nav:hover{
+.link:hover{
   
   color:#fe6e7e;
 }
+nav {
+  position: fixed; /* Fixes the navbar to the top */
+  top: 0;
+  width: 100%;
+  background-color: rgba(36, 34, 34, 0.5);; /* Dark background */
+  z-index: 1000; /* Makes sure navbar stays above other content */
+  padding: 10px 0; /* Some padding */
+  
+}
+
 #edu {
   display: flex;
   flex-direction: column;
@@ -396,4 +418,9 @@ a:hover img {
   object-fit: cover;
   margin: 10px 0;
 }
+nav{
+  height: 80px;
+}
+
+
 
