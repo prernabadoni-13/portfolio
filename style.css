@@ -19,18 +19,16 @@ html {
 
 /* Hero Section */
 #hero {
- 
-    min-height: 100vh; /* Fill entire screen height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    margin: 0; /* remove unnecessary margin pushing it down */
-  
-  
+  min-height: calc(100vh - 80px); /* 100vh minus navbar height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px; /* push it below the navbar */
 }
+
 a:focus {
   outline: none;
 }
