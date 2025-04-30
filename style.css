@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -29,6 +30,9 @@ html {
     margin: 0; /* remove unnecessary margin pushing it down */
   
   
+}
+a:focus {
+  outline: none;
 }
 section {
   position: relative;
@@ -99,14 +103,13 @@ span {
 }
 
 .box {
-  border: 2px solid #e77291;
   background-color: #fff;
   border-radius: 15px;
   padding: 20px;
  
   max-width: 800px;
   box-sizing: border-box;
-  box-shadow: 3px 3px 0px #e77291;
+  
   
 }
 
@@ -226,17 +229,17 @@ a:hover img {
 }
 #lc
 {
-  border: solid #a2445a 2px;
+ 
   border-radius: 50%;
 }
 #github
 {
-  border:  solid #a2445a 2px;
+ 
   border-radius:50%;
 }
 #linkedin
 {
-  border: solid #a2445a 2px;
+  
   border-radius: 50%;
 
 }
@@ -270,7 +273,7 @@ nav {
   position: fixed; /* Fixes the navbar to the top */
   top: 0;
   width: 100%;
-  background-color: rgba(36, 34, 34);; /* Dark background */
+  background-color: black; /* Dark background */
   z-index: 1000; /* Makes sure navbar stays above other content */
   padding: 10px 0; /* Some padding */
   height: 50px;
@@ -323,12 +326,12 @@ nav {
 }
 
 .edu-box p.title {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
 }
 
 .edu-box p.sub {
-  font-size: 18px;
+  font-size: 15px;
 }
 #projects {
   display: flex;
@@ -395,7 +398,7 @@ nav {
   font-size: 14px;
   transition: background-color 0.3s ease;
   margin-bottom:2px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 #waf
 {
@@ -420,7 +423,7 @@ nav {
   margin: 10px 0;
 }
 nav{
-  height: 80px;
+  height: 40px;
 }
 
 

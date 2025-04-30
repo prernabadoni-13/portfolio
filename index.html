@@ -4,19 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
-
   <title>Prerna Badoni</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <nav >
-    <ul style="display: flex; gap: 20px; list-style: none; margin: 0; padding: 0;position: fixed; top: 0; left: 0; padding: 10px;">
-      <li>
-        <a href="#hero"  class="link" >Home</a>
-      </li>
-    </ul>
+  <nav>
       <ul style="display: flex; gap: 20px; list-style: none; margin: 0; padding: 0;position: fixed; top: 0; right: 0; padding: 10px;">
+        <li>
+          <a href="#hero"  class="link" >Home</a>
+        </li>
         <li>
           <a href="#about"  class="link">About</a>
         </li>
@@ -30,19 +26,19 @@
     </nav>
   
   <section id="hero" >
-    <h1 style="font-size: 80px;">PRERNA BADONI</h1>
-    <p style="font-style: italic; margin: 10px 0; font-size: 22px;">Code.Compile.Create</p>
-    <p>
+    <h1 style="font-size: 70px;">Hii, I'm Prerna</h1>
+    <div style="display: flex; align-items: center;">
         <a href="https://www.linkedin.com/in/prerna-badoni-706057267/" >
-          <img   id="linkedin" src="assets/linkeidn.png" alt="LinkedIn" style="width: 70px; height: 70px; border-radius: 50px; margin-right: 15px;"/>
-        </a>
-        <a href="https://github.com/prernabadoni-13" >
-          <img  id="github" src="assets/github.png" alt="GitHub" style="width: 70px; height: 70px; border-radius: 50px; margin-right: 15px;"/>
+          <img   id="linkedin" src="assets/linkedin.jpg" alt="LinkedIn" style="width: 50px; height: 50px; border-radius: 50px; margin-right: 12px;"/>
         </a>
         <a href="https://leetcode.com/u/prerna_badoni/" >
-            <img  id="lc" src="assets/lc.png" alt="LeetCode" style="width: 70px; height: 70px; border-radius: 50px;"/>
+          <img  id="lc" src="assets/lc.png" alt="LeetCode" style="width: 50px; height: 50px; border-radius: 50px;margin-right: 15px;"/>
+      </a>
+        <a href="https://github.com/prernabadoni-13" >
+          <img  id="github" src="assets/github.png" alt="GitHub" style="width: 50px; height: 60px; border-radius: 50px; "/>
         </a>
-    </p>
+        </div>
+    
 </section>
 
 <section id="about" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
@@ -54,11 +50,10 @@
     </div>
     <div class="box">
       <h3 style="text-align: center; margin-top: 0;color: #781727; ;font-size: 25px;">Hi! I am Prerna Badoni.</h3>
-      <p style="text-align: justify; font-size: 20px;color:black">
-        I am a B.Tech 3rd year student, passionate about learning and exploring new horizons in the tech world.<br>
-        I love exploring the world of algorithms, diving into new technologies, and constantly challenging myself to think differently.
-        Whether it's a tricky problem or a new concept, I see every challenge as an opportunity to grow. <br><br>My goal is to become a well-rounded software engineer and to leverage my academic knowledge and technical skills in a growth-oriented environment.
-      </p><br>
+      <p style="text-align: justify; font-size: 15px;color:black">
+        <br>Passionate about learning and exploring new horizons in the tech world.<br><br>
+        Into playing badminton and gardening, where focus, patience, and creativity come together. <br><br>Chasing the goal of becoming a well-rounded software engineer,
+        by learning, unlearning, and growing one step at a time.      </p><br>
       <h3 style="color: #781727; ">Tools and Technologies</h3>
       <p style="color:black"> <span>C/C++ </span>  <span>Java</span>  <span>HTML</span>  <span> CSS </span>  <span>Javascript </span>  <span>Git</span>  <span>Machine Learning </span> <span>SQL</span> 
       </p>
@@ -108,7 +103,7 @@
       <div class="project-box">
         <p class="title">Mobile Price Prediction</p>
         <img src="assets/mobile.png" alt="Mobile Price Prediction">
-        <p class="desc">
+        <p class="desc" style="font-size: 15px;">
           Developed a machine learning model to predict mobile phone prices.
           Implemented and evaluated multiple algorithms including Linear Regression, Random Forest,
           Decision Tree, Logistic Regression, and K-Nearest Neighbors (KNN). Achieved 95.5% accuracy
@@ -126,7 +121,7 @@
       <div class="project-box">
         <p class="title">Web Application Firewall</p>
         <img src="assets/web.png" alt="Web Application Firewall">
-        <p class="desc">
+        <p class="desc" style="font-size: 15px;">
           Designed and developed a lightweight Web Application Firewall to enhance web application security.
           Features include request logging, SQL‐injection detection, and real‑time blocking of suspicious patterns.
         </p>
@@ -143,7 +138,7 @@
       <div class="project-box">
         <p class="title">Content‑Based Movie Recommender with API Integration</p>
         <img src="assets/movie.png" alt="Movie Recommender">
-        <p class="desc">
+        <p class="desc" style="font-size: 15px;">
           Built a content‑based filtering system to recommend the top 5 movies based on user input.
           Integrated RapidAPI to fetch real‑time movie details and dynamically update the dataset.
         </p>
@@ -152,7 +147,7 @@
         href="https://github.com/prernabadoni-13/movie-recommender.git"
         class="github-link"
         target="_blank"
-        rel="noopener noreferrer"> View on GitHub</a>
+        rel="noopener noreferrer" style="margin: 30px;"> View on GitHub</a>
             </div>
       </div>
   
@@ -176,9 +171,9 @@
   </section>
 <section id="contacts" >
   <h2 style="font-size: 30px; margin-bottom: 20px;color:white;">Let's connect!</h2>
-  <p style="font-size: 18px;color: white;">📧 Email: <a href="mailto:prernabadoni1304@gmail.com" style="color: white; text-decoration: none;">prernabadoni1304@gmail.com</a></p>
-  <p style="font-size: 18px;color: white;">📍 Location: Dehradun, India</p>
-  <p style="color: aliceblue;">&copy; 2025 Prerna Badoni. All rights reserved.</p>
+  <p style="font-size: 12px;color: white;">📧 Email: <a href="mailto:prernabadoni1304@gmail.com" style="color: white; text-decoration: none;">prernabadoni1304@gmail.com</a></p>
+  <p style="font-size: 12px;color: white;">📍 Location: Dehradun, India</p>
+  
 </section>
   
 </body>
