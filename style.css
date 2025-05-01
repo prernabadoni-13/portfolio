@@ -99,7 +99,7 @@ section {
 span {
   display: inline-block;
   background-color: white;
-  border: 2px solid #4F3B31;
+  border: 2px solid;
   padding: 5px 10px;
   margin: 4px;
   border-radius: 10px;
@@ -108,10 +108,10 @@ span {
 }
 
 .box {
-  background-color: #fff;
+  background-color:black;
   border-radius: 15px;
   padding: 20px;
- 
+  border: 2px solid #f2afbc;
   max-width: 800px;
   box-sizing: border-box;
   
@@ -168,7 +168,7 @@ img {
   transition: transform 0.3s ease;
 }
 
-a:hover img {
+.p:hover img {
   transform: scale(1.2);
 }
 
@@ -308,10 +308,10 @@ nav {
 .edu-box {
   flex: 1 1 250px;             /* grow/shrink, base width 250px */
   max-width: 300px;
-  background: #fff;
+  background: black;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* box‑shadow */
+  border: 2px solid #f2afbc;
+  box-shadow: 0 4px 10px #f2afbc(0, 0, 0, 0.1); /* box‑shadow */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,9 +362,10 @@ nav {
   flex: 1 1 280px;         /* grow/shrink, base width 280px */
   max-width: 500px;
   height: 550px;
-  background: #fff;
+  background: black;
   padding: 20px;
   border-radius: 8px;
+  border: 2px solid #f2afbc;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -388,7 +389,7 @@ nav {
 
 .project-box .tech {
   font-size: 16px;
-  color: #555;
+  color: rgb(192, 207, 220);
 }
 .github-link {
   display: inline-flex;
@@ -413,9 +414,6 @@ nav {
 {
   margin-top: 15px;
 }
-
-
-
 .github-link:hover {
   background-color: #f2afbc;
   color: black; /* Optional hover effect */
@@ -430,6 +428,7 @@ nav {
 nav{
   height: 40px;
 }
+
 
 
 
